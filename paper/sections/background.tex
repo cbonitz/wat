@@ -36,8 +36,8 @@ The \defword{happens before} relation $\happensbefore$ on events is the
 smallest transitive relation such that
 %
 (1)
-  if $a_i, a_j$ are two distinct events within the same process, then $a_i$
-  happens before $a_j$, and
+  if $a_i, a_j$ are two events within the same process, 
+  and $i < j$, then $a_i$ happens before $a_j$, and
 (2)
   if $a_i$ and $b_j$ are the sending and receiving of a message respectively,
   then $a_i$ happens before $b_j$.
